@@ -2,6 +2,10 @@ package be.digitalcity.formation.exercices;
 
 import java.util.Scanner;
 
+//        Écrire un algorithme demandant à l’utilisateur le nombre de joueurs (max 10 joueurs).
+//        Ensuite, l’algorithme doit demander à l’utilisateur le score de chaque joueur. Une fois ceci
+//        fini, il faut afficher la moyenne des scores.
+
 public class Tableau3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
