@@ -20,7 +20,6 @@ public class Tableau5 {
                 j++;
             }
             i++;
-            System.out.println(("plop"));
         }
 
         for (int k : array ){

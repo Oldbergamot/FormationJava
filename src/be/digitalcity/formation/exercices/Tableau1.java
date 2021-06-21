@@ -12,6 +12,10 @@ public class Tableau1 {
 
         for (int i = 0 ; i < 6 ; i++) {
             System.out.println("Veuillez entrer un nombre");
+            while(!sc.hasNextInt()) {
+                System.out.println("Veuillez entrer un nombre");
+                sc.next();
+            }
             array[i]= sc.nextInt();
         }
 

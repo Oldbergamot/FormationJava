@@ -63,13 +63,13 @@ public class Tableau11 {
             }
             return result;
         }
-        return array;
+        return array; //value is not in the array
     }
 
     /**
      * @param n an int
      * @param array
-     * @return the index of the first occurence of n in array, -1 if not present
+     * @return the index of the first occurrence of n in array, -1 if not present
      */
     public static int getPositionInArray(int n, int [] array){
         for (int i = 0 ; i < array.length ; i++ ){

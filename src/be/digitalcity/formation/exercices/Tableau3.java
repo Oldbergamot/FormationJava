@@ -10,15 +10,22 @@ public class Tableau3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Veuillez entrer le nombre de joueurs ");
+        while(!sc.hasNextInt()){
+            System.out.println("Veuillez entrer le nombre de joueurs ");
+            sc.next();
+        }
         int nbPlayer = sc.nextInt();
         int [] scores = new int [nbPlayer];
         int mean = 0;
         for (int i = 0 ; i < nbPlayer ; i++) {
             System.out.println("Entrez score : ");
+            while(!sc.hasNextInt()){
+                System.out.println("Entrez score : ");
+                sc.next();
+            }
             scores[i] = sc.nextInt();
             mean += scores[i];
         }
         System.out.println("La moyenne des scores est "+(mean/nbPlayer));
-
     }
 }

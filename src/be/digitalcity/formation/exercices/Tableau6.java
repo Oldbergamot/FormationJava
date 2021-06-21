@@ -10,21 +10,19 @@ import java.util.Random;
 public class Tableau6 {
     public static void main(String[] args) {
         int [] array1 = {1,3,5,7,9};
-        int [] array2 = {0,2,4,6,8};
+        int [] array2 = {15,2,4,6,8,129,0,36};
         int [] array3;
 
         //Check for biggest int
 
         int max = Integer.MAX_VALUE;
 
-        if(!isPresent(max, array1) && !isPresent(max, array2)){
-            array3 = pasteAndSort(array1, array2, max);
-        } else {
-            while(isPresent(max, array1) || isPresent(max, array2)) {
+        if (isPresent(max, array1) || isPresent(max, array2)) {
+            while (isPresent(max, array1) || isPresent(max, array2)) {
                 max = new Random().nextInt(Integer.MAX_VALUE);
             }
-            array3 = pasteAndSort(array1, array2, max);
         }
+        array3 = pasteAndSort(array1, array2, max);
         displayArray(array3);
     }
 
@@ -44,7 +42,7 @@ public class Tableau6 {
      * Return a new array with the values of both arrays sorted
      * @param array1 first set of data
      * @param array2 second set of data
-     * @param val reserved value witch is not present in the arrays, used to replace allready copied data
+     * @param val reserved value witch is not present in the arrays, used to replace already copied data
      * @return a new int array with the values of both arrays sorted
      */
     public static int[] pasteAndSort(int [] array1, int [] array2, int val) {
