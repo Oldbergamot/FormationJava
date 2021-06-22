@@ -32,7 +32,7 @@ public class MasterMind {
         Random r = new Random();
         int temp = 0;
         for (int i = 0 ; i < 4 ; i++) {
-            temp = r.nextInt((possibilities.size())-i);
+            temp = r.nextInt((possibilities.size()));
             while(result.contains(possibilities.get(temp))) temp = r.nextInt((possibilities.size())-i);
             result = result+possibilities.get(temp);
         }
